@@ -7,7 +7,7 @@ export default function WeatherPage() {
   const [selectedWeather, setSelectedWeather] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/weather")
+    fetch("https://weather-app-server-beta.vercel.app/api/weather")
       .then((res) => res.json())
       .then((data) => setWeatherData(data));
   }, []);
